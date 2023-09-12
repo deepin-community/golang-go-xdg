@@ -1,0 +1,21 @@
+From: Roger Shimizu <rogershimizu@gmail.com>
+Date: Mon, 6 Feb 2017 22:44:45 +0900
+Subject: use golang-check.v1-dev
+
+---
+ base_directory_test.go | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/base_directory_test.go b/base_directory_test.go
+index 387322c..b75ea2c 100644
+--- a/base_directory_test.go
++++ b/base_directory_test.go
+@@ -3,7 +3,7 @@
+ package xdg
+ 
+ import (
+-	. "launchpad.net/gocheck"
++	. "gopkg.in/check.v1"
+ 	"os"
+ 	"path/filepath"
+ 	"strings"
