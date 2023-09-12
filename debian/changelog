@@ -1,5 +1,30 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-go-xdg (0~bzr20140219-3) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * Switch to XS-Go-Import-Path
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Michael Stapelberg <stapelberg@debian.org>  Fri, 09 Feb 2018 09:55:29 +0100
+
+golang-go-xdg (0~bzr20140219-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Paul Tagliamonte ]
+  * Use a secure transport for the Vcs-Git and Vcs-Browser URL
+
+  [ Roger Shimizu ]
+  * debian/control:
+    - Update Build-Depends on golang-check.v1-dev, in stead of
+      golang-gocheck-dev which is already non-active upstream.
+    - Use cgit URL for Vcs-Browser.
+  * debian/patches:
+    - Add a patch to use golang-check.v1-dev.
+    - Add a patch to remove failure tests (Closes: #830446).
+
+ -- Roger Shimizu <rogershimizu@gmail.com>  Tue, 07 Feb 2017 00:04:24 +0900
+
+golang-go-xdg (0~bzr20140219-1) unstable; urgency=low
+
+  * Initial release (Closes: #739540).
+
+ -- Sergio Schvezov <sergio.schvezov@canonical.com>  Tue, 18 Feb 2014 00:12:29 -0300
